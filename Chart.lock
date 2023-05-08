@@ -2,5 +2,8 @@ dependencies:
 - name: zookeeper-operator
   repository: https://charts.pravega.io
   version: 0.2.15
-digest: sha256:64b464315ac4a5b1720c86cc7cfe77886ae0cdb199cc32f10210107a4325eb20
-generated: "2023-05-05T14:16:40.547937-04:00"
+- name: kafka-operator
+  repository: https://kubernetes-charts.banzaicloud.com
+  version: 0.24.1
+digest: sha256:d50e1edd5430a309c1c0529416fe4ef8efa32dd614034d99972d1b2a68154663
+generated: "2023-05-08T13:01:57.687571-04:00"
