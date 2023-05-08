@@ -27,8 +27,11 @@ dependencies:
   - name: zookeeper-operator
     repository: https://charts.pravega.io
     version: "0.2.15"
-  # - name: kafka-operator
-  #   repository: https://kubernetes-charts.banzaicloud.com
-  #   version: "0.24.1"
+  - name: kafka-operator
+    repository: https://kubernetes-charts.banzaicloud.com
+    version: "0.24.1"
 crds:
-  - kafka-operator.crds.yaml
+  - kafkatopics.crds.yml
+  - cruisecontrol.crds.yml
+  - kafkauser.crds.yml
+  - kafkacluster.crds.yml
