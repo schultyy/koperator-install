@@ -27,3 +27,5 @@ dependencies:
   - name: zookeeper-operator
     repository: https://charts.pravega.io
     version: "0.2.15"
+crds:
+  - kafka-operator.crds.yaml
