@@ -3,7 +3,7 @@ kind: KafkaCluster
 metadata:
   labels:
     controller-tools.k8s.io: "1.0"
-  name: kafka
+  name: {{ .Values.kafka.name }}
 spec:
   monitoringConfig:
     jmxImage: "ghcr.io/banzaicloud/jmx-javaagent:0.16.1"
@@ -14,7 +14,7 @@ spec:
   oneBrokerPerNode: false
   clusterImage: "ghcr.io/banzaicloud/kafka:2.13-3.1.0"
   readOnlyConfig: |
-    auto.create.topics.enable=false
+    auto.create.topics.enable={{ .Values.kafka.readOnlyConfig.autoCreateTopics }}
     cruise.control.metrics.topic.auto.create=true
     cruise.control.metrics.topic.num.partitions=1
     cruise.control.metrics.topic.replication.factor=2
