@@ -1,10 +1,10 @@
 apiVersion: zookeeper.pravega.io/v1beta1
 kind: ZookeeperCluster
 metadata:
-    name: zookeeper
-    namespace: zookeeper
+    name: {{.Values.zookeeper.name }} 
+    namespace: {{.Values.zookeeper.namespace }} 
 spec:
-    replicas: 1
+    replicas: {{.Values.zookeeper.replicas }}
     persistence:
-        reclaimPolicy: Delete
+        reclaimPolicy: {{.Values.zookeeper.reclaimPolicy }}
 
