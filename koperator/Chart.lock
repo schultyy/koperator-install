@@ -1,0 +1,6 @@
+dependencies:
+- name: kafka-operator
+  repository: https://kubernetes-charts.banzaicloud.com
+  version: 0.24.1
+digest: sha256:46eff5eae1c785540b45aed19de6115a9136ab8ba104388a1327033291770f7a
+generated: "2023-05-10T10:36:28.700489-04:00"

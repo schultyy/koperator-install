@@ -1,6 +1,6 @@
 apiVersion: v2
-name: koperator-setup
-description: A Helm chart for Kubernetes
+name: koperator
+description: A Helm chart to install Koperator
 
 # A chart can be either an 'application' or a 'library' chart.
 #
@@ -24,9 +24,6 @@ version: 0.1.0
 appVersion: "1.16.0"
 
 dependencies:
-  - name: zookeeper-operator
-    repository: https://charts.pravega.io
-    version: "0.2.15"
   - name: kafka-operator
     repository: https://kubernetes-charts.banzaicloud.com
     version: "0.24.1"
